@@ -9,6 +9,10 @@ $color-top: #202027;
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1440px;
+}
+
 a {
     all: unset;
 }
@@ -57,7 +61,7 @@ button:hover {
         position: relative;
     }
 
-        &__box::before {
+    &__box::before {
         content: "";
         background-image: url(./image/star-grin2.svg);
         position: absolute;
@@ -122,6 +126,8 @@ button:hover {
         left: 59.3%;
         top: -333px;
         z-index: 2;
+        max-width: 586px;
+        overflow: hidden;
     }
 
     &__anim-strip {
@@ -183,9 +189,9 @@ button:hover {
         position: absolute;
         left: 64.9%;
         top: 77px;
-        width: 585px;
-        height: 585px;
         z-index: 2;
+        max-width: 505px;
+        overflow: hidden;
     }
 
     &__box {
@@ -301,14 +307,14 @@ button:hover {
     }
 
     &__box::before {
-    content: "";
-    background-image: url(./image/star-top3.svg);
-    position: absolute;
-    left: 96.7%;
-    top: 48px;
-    width: 35px;
-    height: 35px;
-}
+        content: "";
+        background-image: url(./image/star-top3.svg);
+        position: absolute;
+        left: 96.7%;
+        top: 48px;
+        width: 35px;
+        height: 35px;
+    }
 
     &__box::after {
         content: "";
@@ -397,21 +403,21 @@ button:hover {
     left: 86.7%;
     top: 97.6%;
     width: 41px;
-    height: 41px; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    height: 41px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-    .for::after {
-        content: "";
-        background-image: url(./image/star-for2.svg);
-        position: absolute;
-        left: 91.5%;
-        top: 96.2%;
-        width: 69px;
-        height: 69px;
-        background-repeat: no-repeat;
-    }
+.for::after {
+    content: "";
+    background-image: url(./image/star-for2.svg);
+    position: absolute;
+    left: 91.5%;
+    top: 96.2%;
+    width: 69px;
+    height: 69px;
+    background-repeat: no-repeat;
+}
 
 
 

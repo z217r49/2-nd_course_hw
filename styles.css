@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1440px;
+}
+
 a {
   all: unset;
 }
@@ -110,6 +114,8 @@ button:hover {
   left: 59.3%;
   top: -333px;
   z-index: 2;
+  max-width: 586px;
+  overflow: hidden;
 }
 .header__anim-strip {
   margin-top: 156px;
@@ -165,9 +171,9 @@ button:hover {
   position: absolute;
   left: 64.9%;
   top: 77px;
-  width: 585px;
-  height: 585px;
   z-index: 2;
+  max-width: 505px;
+  overflow: hidden;
 }
 .top-games__box {
   margin-top: 72px;
