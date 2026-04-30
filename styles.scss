@@ -9,9 +9,11 @@ $color-top: #202027;
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1440px;
-}
+// body {
+//     max-width: 1440px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 
 a {
     all: unset;
@@ -53,6 +55,7 @@ button:hover {
 }
 
 .header {
+    width: 100%;
     background-color: $color-bckground;
     position: relative;
     z-index: 1;
@@ -97,6 +100,7 @@ button:hover {
     }
 
     &__text {
+        width: 720px;
         padding-top: 24px;
         font-size: 24px;
         color: #202027;
@@ -128,6 +132,11 @@ button:hover {
         z-index: 2;
         max-width: 586px;
         overflow: hidden;
+        margin-right: 0;
+    }
+
+    &__imgBig {
+        object-fit: cover;
     }
 
     &__anim-strip {
@@ -140,6 +149,9 @@ button:hover {
         /*удалить пример высоты полосы анимации*/
     }
 
+    &__titl-phone {
+        display: none;
+    }
 
 }
 
@@ -433,3 +445,5 @@ button:hover {
         text-align: center;
     }
 }
+
+@import "phone"

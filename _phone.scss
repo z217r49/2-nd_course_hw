@@ -1,0 +1,72 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+
+        &__content {
+        //     padding-left: calc(50% - 128px);
+        //     padding-right: calc(50% - 128px);
+            padding-top: 147px;
+        }
+
+        &__titl {
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+            padding-left: calc(50% - 128px);
+            padding-right: calc(50% - 128px);
+        }
+
+        &__text {
+            width: 296px;
+            padding-top: 24px;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        &__spc {
+            white-space: nowrap;
+        }
+
+        &__text-smbld {
+            padding-top: 24px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__btn {
+            margin-top: 34px;
+            margin-left: 46px;
+            margin-right: 46px;
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__imgBig {
+            display: none;
+        }
+
+        &__anim-strip {
+            margin-top: 131px;
+            height: 51px;
+        }
+
+        &__star-big {
+            display: none;
+            // max-width: 220px;
+            // min-height: 220px;
+            // background-image: url(./image/phone-star-big.svg);
+            // left: 49.8%;
+            // top: -100px;
+        }
+
+    }
+}

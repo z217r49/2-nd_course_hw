@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1440px;
-}
-
 a {
   all: unset;
 }
@@ -49,6 +45,7 @@ button:hover {
 }
 
 .header {
+  width: 100%;
   background-color: #E1FF8F;
   position: relative;
   z-index: 1;
@@ -88,6 +85,7 @@ button:hover {
   text-align: left;
 }
 .header__text {
+  width: 720px;
   padding-top: 24px;
   font-size: 24px;
   color: #202027;
@@ -116,6 +114,11 @@ button:hover {
   z-index: 2;
   max-width: 586px;
   overflow: hidden;
+  margin-right: 0;
+}
+.header__imgBig {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header__anim-strip {
   margin-top: 156px;
@@ -125,6 +128,9 @@ button:hover {
   z-index: 3;
   height: 90px;
   /*удалить пример высоты полосы анимации*/
+}
+.header__titl-phone {
+  display: none;
 }
 
 .header::before {
@@ -382,4 +388,57 @@ button:hover {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__content {
+    padding-top: 147px;
+  }
+  .header__titl {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    padding-left: calc(50% - 128px);
+    padding-right: calc(50% - 128px);
+  }
+  .header__text {
+    width: 296px;
+    padding-top: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .header__spc {
+    white-space: nowrap;
+  }
+  .header__text-smbld {
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .header__btn {
+    margin-top: 34px;
+    margin-left: 46px;
+    margin-right: 46px;
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .header__imgBig {
+    display: none;
+  }
+  .header__anim-strip {
+    margin-top: 131px;
+    height: 51px;
+  }
+  .header__star-big {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
