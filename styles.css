@@ -173,6 +173,9 @@ button:hover {
   letter-spacing: 0px;
   text-align: left;
 }
+.top-games__titl-phone {
+  display: none;
+}
 .top-games__img-big {
   position: absolute;
   left: 64.9%;
@@ -390,55 +393,4 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .header__content {
-    padding-top: 147px;
-  }
-  .header__titl {
-    font-size: 40px;
-    line-height: 49px;
-    text-align: center;
-    padding-left: calc(50% - 128px);
-    padding-right: calc(50% - 128px);
-  }
-  .header__text {
-    width: 296px;
-    padding-top: 24px;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-  }
-  .header__spc {
-    white-space: nowrap;
-  }
-  .header__text-smbld {
-    padding-top: 24px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .header__btn {
-    margin-top: 34px;
-    margin-left: 46px;
-    margin-right: 46px;
-    width: 285px;
-    height: 55px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .header__imgBig {
-    display: none;
-  }
-  .header__anim-strip {
-    margin-top: 131px;
-    height: 51px;
-  }
-  .header__star-big {
-    display: none;
-  }
-}/*# sourceMappingURL=styles.css.map */
+@i @import "phone";/*# sourceMappingURL=styles.css.map */

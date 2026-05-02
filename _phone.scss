@@ -7,8 +7,8 @@
     .header {
 
         &__content {
-        //     padding-left: calc(50% - 128px);
-        //     padding-right: calc(50% - 128px);
+            //     padding-left: calc(50% - 128px);
+            //     padding-right: calc(50% - 128px);
             padding-top: 147px;
         }
 
@@ -68,5 +68,14 @@
             // top: -100px;
         }
 
+    }
+}
+
+.top-games {
+
+
+
+    &__box {
+        // margin-top: 48px;
     }
 }

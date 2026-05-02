@@ -197,6 +197,10 @@ button:hover {
         text-align: left;
     }
 
+    &__titl-phone {
+        display: none;
+    }
+
     &__img-big {
         position: absolute;
         left: 64.9%;
@@ -446,4 +450,5 @@ button:hover {
     }
 }
 
+@import "tablet"
 @import "phone"

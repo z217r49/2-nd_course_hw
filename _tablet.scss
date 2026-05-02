@@ -1,0 +1,31 @@
+@media (max-width: 1024pxpx) {
+
+    .top-games {
+
+        &__img-big {
+            display: none;
+        }
+
+        &__titl {
+            display: none;
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__titl-tablet {
+            display: block;
+            font-size: 40px;
+            font-weight: 700;
+            color: #ffffff;
+            padding-top: 48px;
+        }
+
+        &__box {
+            margin-top: 48px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
