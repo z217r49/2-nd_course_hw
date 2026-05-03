@@ -330,9 +330,6 @@ button:hover {
 .for__subtitle_spc {
   white-space: nowrap;
 }
-.for__subtitle_2row {
-  margin-top: 0;
-}
 .for__text {
   margin-top: 24px;
   font-size: 24px;
@@ -342,9 +339,6 @@ button:hover {
 }
 .for__text_spc {
   white-space: nowrap;
-}
-.for__text_2rw {
-  margin-top: 3px;
 }
 .for__btn {
   margin-top: 36px;
@@ -554,6 +548,7 @@ button:hover {
   }
   .for {
     padding-top: 48px;
+    padding-bottom: 6px;
   }
   .for__box {
     display: flex;
@@ -588,14 +583,14 @@ button:hover {
     margin-top: 4px;
   }
   .for__subtitle {
-    margin-top: 37px;
+    margin-top: 32px;
     font-size: 32px;
-    margin-bottom: 24px;
-  }
-  .for__subtitle_2row {
-    margin-top: 0;
+    margin-bottom: 14px;
+    line-height: 39px;
+    max-width: 284px;
   }
   .for__text {
+    line-height: 20px;
     margin-top: 0;
   }
   .for__btn {
@@ -612,5 +607,12 @@ button:hover {
   }
   .for::after {
     display: none;
+  }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer__cntnt {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=styles.css.map */

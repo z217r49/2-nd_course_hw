@@ -81,6 +81,7 @@
 
     .for {
         padding-top: 48px;
+        padding-bottom: 6px;
 
         &__box {
             display: flex;
@@ -115,25 +116,23 @@
             &_item1 {
                 order: 2;
             }
+
             &_rew {
                 margin-top: 4px;
             }
         }
 
         &__subtitle {
-            margin-top: 37px;
+            margin-top: 32px;
             font-size: 32px;
-            margin-bottom: 24px;
-
-            &_2row {
-                margin-top: 0;
-            }
+            margin-bottom: 14px;
+            line-height: 39px;
+            max-width: 284px;
         }
 
         &__text {
+            line-height: 20px;
             margin-top: 0;
-
-
         }
 
         &__btn {
@@ -154,10 +153,19 @@
 
     .for::before {
         display: none;
-}
+    }
 
-.for::after {
-    display: none;
-}
+    .for::after {
+        display: none;
+    }
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__cntnt {
+            font-size: 16px;
+        }
+    }
 
 }
