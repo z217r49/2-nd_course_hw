@@ -44,7 +44,7 @@
             display: block;
             min-width: 223px;
             left: 50%;
-            top: -104px;
+            top: -104px;            
         }
 
         &__imgBig {
@@ -53,6 +53,7 @@
 
         &__star-big-phone {
             display: block;
+            object-fit: cover;
         }
 
     }
@@ -128,11 +129,19 @@
             margin-bottom: 14px;
             line-height: 39px;
             max-width: 284px;
+
+            &_dopmrgn {
+                margin-top: 30px;
+            }
         }
 
         &__text {
             line-height: 20px;
-            margin-top: 0;
+            margin-top: 0;            
+
+            &_spc-phone {
+                white-space: nowrap;
+            }
         }
 
         &__btn {
@@ -160,7 +169,7 @@
     }
 
     .footer {
-        padding-top: 40px;
+        padding-top: 46px;
         padding-bottom: 40px;
 
         &__cntnt {

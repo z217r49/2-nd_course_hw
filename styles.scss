@@ -9,12 +9,6 @@ $color-top: #202027;
     box-sizing: border-box;
 }
 
-// body {
-//     max-width: 1440px;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
 a {
     all: unset;
 }
@@ -454,3 +448,4 @@ button:hover {
 
 @import "tablet";
 @import "phone";
+@import "js-test";

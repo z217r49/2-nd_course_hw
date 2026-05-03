@@ -395,7 +395,7 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -525,6 +525,8 @@ button:hover {
   }
   .header__star-big-phone {
     display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header::before {
     content: "";
@@ -589,9 +591,15 @@ button:hover {
     line-height: 39px;
     max-width: 284px;
   }
+  .for__subtitle_dopmrgn {
+    margin-top: 30px;
+  }
   .for__text {
     line-height: 20px;
     margin-top: 0;
+  }
+  .for__text_spc-phone {
+    white-space: nowrap;
   }
   .for__btn {
     margin-top: 32px;
@@ -609,10 +617,18 @@ button:hover {
     display: none;
   }
   .footer {
-    padding-top: 40px;
+    padding-top: 46px;
     padding-bottom: 40px;
   }
   .footer__cntnt {
     font-size: 16px;
   }
+}
+.task {
+  height: 300px;
+  border: 2px solid #000000;
+  text-align: center;
+  font-size: 32;
+  font-width: 600;
+  color: #000;
 }/*# sourceMappingURL=styles.css.map */
