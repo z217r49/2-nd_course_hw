@@ -327,6 +327,9 @@ button:hover {
   font-size: 48px;
   font-weight: 700;
 }
+.for__subtitle_spc {
+  white-space: nowrap;
+}
 .for__subtitle_2row {
   margin-top: 0;
 }
@@ -334,6 +337,11 @@ button:hover {
   margin-top: 24px;
   font-size: 24px;
   font-weight: 400;
+  max-width: 497px;
+  line-height: 32px;
+}
+.for__text_spc {
+  white-space: nowrap;
 }
 .for__text_2rw {
   margin-top: 3px;
@@ -393,4 +401,216 @@ button:hover {
   text-align: center;
 }
 
-@i @import "phone";/*# sourceMappingURL=styles.css.map */
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__content {
+    padding-top: 147px;
+  }
+  .header__titl {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__text {
+    text-align: center;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__text-smbld {
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .header__btn {
+    margin-top: 34px;
+    margin-left: calc(50% - 143px);
+    margin-right: calc(50% - 143px);
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .header__imgBig {
+    display: none;
+  }
+  .header__anim-strip {
+    margin-top: 131px;
+    height: 51px;
+  }
+  .header__star-big {
+    display: none;
+  }
+  .header::before {
+    left: 90%;
+    top: 423px;
+  }
+  .header::after {
+    left: 82%;
+    top: 445px;
+  }
+  .top-games {
+    display: none;
+  }
+  .for__box::before {
+    left: 89%;
+    top: 52px;
+  }
+  .for__box::after {
+    left: 92%;
+    top: 70px;
+  }
+  .for__subtitle {
+    margin-top: 16px;
+    font-size: 36px;
+    line-height: 24px;
+  }
+  .for__text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .for__btn {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .for::before {
+    left: 86.7%;
+    top: 97.6%;
+  }
+  .for::after {
+    left: 89.5%;
+    top: 96.2%;
+    width: 69px;
+  }
+}
+@media (max-width: 767px) {
+  .header__box::before {
+    content: "";
+    background-image: url(./image/star-phone-grin2.svg);
+    position: absolute;
+    left: 10%;
+    top: 97px;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+  }
+  .header__box::after {
+    content: "";
+    background-image: url(./image/star-phone3.svg);
+    position: absolute;
+    left: 24.6%;
+    top: 64px;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+  }
+  .header__text {
+    padding-top: 24px;
+    width: 100%;
+    line-height: 20px;
+  }
+  .header__spc {
+    white-space: nowrap;
+  }
+  .header__btn {
+    margin-top: 36px;
+    margin-left: calc(50% - 140px);
+    margin-right: calc(50% - 140px);
+  }
+  .header__star-big {
+    display: block;
+    min-width: 223px;
+    left: 50%;
+    top: -104px;
+  }
+  .header__imgBig {
+    display: none;
+  }
+  .header__star-big-phone {
+    display: block;
+  }
+  .header::before {
+    content: "";
+    background-image: url(./image/star-phone2.svg);
+    position: absolute;
+    left: 80.8%;
+    top: 581px;
+    width: 39px;
+    height: 41px;
+    background-repeat: no-repeat;
+  }
+  .header::after {
+    content: "";
+    background-image: url(./image/star-phone-grin3.svg);
+    position: absolute;
+    left: 72.7%;
+    top: 557px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+  .for {
+    padding-top: 48px;
+  }
+  .for__box {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .for__box::before {
+    display: none;
+  }
+  .for__box::after {
+    display: none;
+  }
+  .for__title {
+    font-size: 40px;
+    padding-bottom: 26px;
+  }
+  .for__card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-bottom: 32px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .for__content {
+    padding-left: 29px;
+  }
+  .for__content_item1 {
+    order: 2;
+  }
+  .for__content_rew {
+    margin-top: 4px;
+  }
+  .for__subtitle {
+    margin-top: 37px;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .for__subtitle_2row {
+    margin-top: 0;
+  }
+  .for__text {
+    margin-top: 0;
+  }
+  .for__btn {
+    margin-top: 32px;
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .for__img_item2 {
+    order: 1;
+  }
+  .for::before {
+    display: none;
+  }
+  .for::after {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

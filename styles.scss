@@ -374,6 +374,10 @@ button:hover {
         font-size: 48px;
         font-weight: 700;
 
+        &_spc {
+            white-space: nowrap;
+        }
+
         &_2row {
             margin-top: 0;
         }
@@ -383,6 +387,12 @@ button:hover {
         margin-top: 24px;
         font-size: 24px;
         font-weight: 400;
+        max-width: 497px;
+        line-height: 32px;
+
+        &_spc {
+            white-space: nowrap;
+        }
 
         &_2rw {
             margin-top: 3px;
@@ -450,5 +460,5 @@ button:hover {
     }
 }
 
-@import "tablet"
-@import "phone"
+@import "tablet";
+@import "phone";

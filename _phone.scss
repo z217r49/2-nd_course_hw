@@ -1,81 +1,163 @@
 @media (max-width: 767px) {
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 
     .header {
 
-        &__content {
-            //     padding-left: calc(50% - 128px);
-            //     padding-right: calc(50% - 128px);
-            padding-top: 147px;
+        &__box::before {
+            content: "";
+            background-image: url(./image/star-phone-grin2.svg);
+            position: absolute;
+            left: 10%;
+            top: 97px;
+            width: 35px;
+            height: 35px;
+            background-repeat: no-repeat;
         }
 
-        &__titl {
-            font-size: 40px;
-            line-height: 49px;
-            text-align: center;
-            padding-left: calc(50% - 128px);
-            padding-right: calc(50% - 128px);
+        &__box::after {
+            content: "";
+            background-image: url(./image/star-phone3.svg);
+            position: absolute;
+            left: 24.6%;
+            top: 64px;
+            width: 35px;
+            height: 35px;
+            background-repeat: no-repeat;
         }
 
         &__text {
-            width: 296px;
             padding-top: 24px;
-            margin-left: 40px;
-            margin-right: 40px;
-            font-size: 16px;
+            width: 100%;
             line-height: 20px;
-            text-align: center;
         }
 
         &__spc {
             white-space: nowrap;
         }
 
-        &__text-smbld {
-            padding-top: 24px;
-            font-size: 16px;
-            line-height: 20px;
+        &__btn {
+            margin-top: 36px;
+            margin-left: calc(50% - 140px);
+            margin-right: calc(50% - 140px);
         }
 
-        &__btn {
-            margin-top: 34px;
-            margin-left: 46px;
-            margin-right: 46px;
-            width: 285px;
-            height: 55px;
-            font-size: 16px;
-            font-weight: 600;
+        &__star-big {
+            display: block;
+            min-width: 223px;
+            left: 50%;
+            top: -104px;
         }
 
         &__imgBig {
             display: none;
         }
 
-        &__anim-strip {
-            margin-top: 131px;
-            height: 51px;
-        }
-
-        &__star-big {
-            display: none;
-            // max-width: 220px;
-            // min-height: 220px;
-            // background-image: url(./image/phone-star-big.svg);
-            // left: 49.8%;
-            // top: -100px;
+        &__star-big-phone {
+            display: block;
         }
 
     }
+
+    .header::before {
+        content: "";
+        background-image: url(./image/star-phone2.svg);
+        position: absolute;
+        left: 80.8%;
+        top: 581px;
+        width: 39px;
+        height: 41px;
+        background-repeat: no-repeat;
+    }
+
+    .header::after {
+        content: "";
+        background-image: url(./image/star-phone-grin3.svg);
+        position: absolute;
+        left: 72.7%;
+        top: 557px;
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+    }
+
+    .for {
+        padding-top: 48px;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        &__box::before {
+            display: none;
+        }
+
+        &__box::after {
+            display: none;
+        }
+
+        &__title {
+            font-size: 40px;
+            padding-bottom: 26px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            padding-bottom: 32px;
+            max-height: fit-content;
+        }
+
+        &__content {
+            padding-left: 29px;
+
+            &_item1 {
+                order: 2;
+            }
+            &_rew {
+                margin-top: 4px;
+            }
+        }
+
+        &__subtitle {
+            margin-top: 37px;
+            font-size: 32px;
+            margin-bottom: 24px;
+
+            &_2row {
+                margin-top: 0;
+            }
+        }
+
+        &__text {
+            margin-top: 0;
+
+
+        }
+
+        &__btn {
+            margin-top: 32px;
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+
+        }
+
+        &__img {
+
+            &_item2 {
+                order: 1;
+            }
+        }
+    }
+
+    .for::before {
+        display: none;
 }
 
-.top-games {
+.for::after {
+    display: none;
+}
 
-
-
-    &__box {
-        // margin-top: 48px;
-    }
 }
