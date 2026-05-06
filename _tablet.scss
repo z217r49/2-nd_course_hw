@@ -1,4 +1,11 @@
-@media (max-width: 1023px) {
+@media (min-width: 1023px) and (max-width: 1088px) {
+    .center {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 1022px) {
 
     .center {
         padding-left: 16px;
@@ -7,8 +14,14 @@
 
     .header {
 
+        &__box {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
         &__content {
             padding-top: 147px;
+            min-width: 0;
         }
 
         &__titl {
@@ -82,10 +95,14 @@
             top: 70px;
         }
 
+        &__card {
+            min-width: 0;
+        }
+
         &__subtitle {
             margin-top: 16px;
             font-size: 36px;
-            line-height: 24px;
+            line-height: 30px;
         }
 
         &__text {
@@ -111,3 +128,4 @@
         width: 69px;
     }
 }
+

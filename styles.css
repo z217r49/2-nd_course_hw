@@ -40,8 +40,8 @@ button:hover {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .header {
@@ -49,9 +49,12 @@ button:hover {
   background-color: #E1FF8F;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .header__box {
   position: relative;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 .header__box::before {
   content: "";
@@ -72,9 +75,8 @@ button:hover {
   height: 35px;
 }
 .header__content {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
   padding-top: 196px;
+  min-width: 1200px;
 }
 .header__titl {
   color: #202027;
@@ -112,7 +114,6 @@ button:hover {
   left: 59.3%;
   top: -333px;
   z-index: 2;
-  max-width: 586px;
   overflow: hidden;
   margin-right: 0;
 }
@@ -153,10 +154,19 @@ button:hover {
   height: 83px;
 }
 
+.top {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #202027;
+}
+
 .top-games {
   background-color: #202027;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .top-games__titl {
   padding-top: 94px;
@@ -181,8 +191,11 @@ button:hover {
   left: 64.9%;
   top: 77px;
   z-index: 2;
-  max-width: 505px;
   overflow: hidden;
+}
+.top-games__imgBig {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .top-games__box {
   margin-top: 72px;
@@ -202,6 +215,8 @@ button:hover {
   background-color: #ffffff;
   cursor: pointer;
   transition: transform 0.3s ease;
+  position: relative;
+  z-index: 3;
 }
 .top-games__card_1-3 {
   max-height: 473px;
@@ -307,7 +322,9 @@ button:hover {
   padding-bottom: 40px;
 }
 .for__card {
+  max-width: 1200px;
   max-height: 500px;
+  min-width: 850px;
   margin-top: 32px;
   border: none;
   background-color: #ffffff;
@@ -395,13 +412,24 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) and (max-width: 1088px) {
   .center {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (max-width: 1022px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__box {
     padding-left: 16px;
     padding-right: 16px;
   }
   .header__content {
     padding-top: 147px;
+    min-width: 0;
   }
   .header__titl {
     font-size: 40px;
@@ -457,10 +485,13 @@ button:hover {
     left: 92%;
     top: 70px;
   }
+  .for__card {
+    min-width: 0;
+  }
   .for__subtitle {
     margin-top: 16px;
     font-size: 36px;
-    line-height: 24px;
+    line-height: 30px;
   }
   .for__text {
     margin-top: 16px;
@@ -550,7 +581,7 @@ button:hover {
   }
   .for {
     padding-top: 48px;
-    padding-bottom: 6px;
+    padding-bottom: 12px;
   }
   .for__box {
     display: flex;
@@ -617,7 +648,7 @@ button:hover {
     display: none;
   }
   .footer {
-    padding-top: 46px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .footer__cntnt {

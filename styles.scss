@@ -44,8 +44,8 @@ button:hover {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .header {
@@ -53,9 +53,12 @@ button:hover {
     background-color: $color-bckground;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
     &__box {
         position: relative;
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
     }
 
     &__box::before {
@@ -79,9 +82,10 @@ button:hover {
     }
 
     &__content {
-        padding-left: calc(50% - 600px);
-        padding-right: calc(50% - 600px);
+        // padding-left: 120px;
+        // padding-right: 120px;
         padding-top: 196px;
+        min-width: 1200px;
     }
 
     &__titl {
@@ -124,7 +128,6 @@ button:hover {
         left: 59.3%;
         top: -333px;
         z-index: 2;
-        max-width: 586px;
         overflow: hidden;
         margin-right: 0;
     }
@@ -169,10 +172,19 @@ button:hover {
     height: 83px;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #202027;
+}
+
 .top-games {
     background-color: $color-top;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
     &__titl {
         padding-top: 94px;
@@ -200,8 +212,12 @@ button:hover {
         left: 64.9%;
         top: 77px;
         z-index: 2;
-        max-width: 505px;
+        // max-width: 505px;
         overflow: hidden;
+    }
+
+    &__imgBig {
+        object-fit: cover;
     }
 
     &__box {
@@ -224,6 +240,8 @@ button:hover {
         background-color: #ffffff;
         cursor: pointer;
         transition: transform 0.3s ease;
+        position: relative;
+        z-index: 3;
 
         &_1-3 {
             max-height: 473px;
@@ -345,7 +363,9 @@ button:hover {
     }
 
     &__card {
+        max-width: 1200px;
         max-height: 500px;
+        min-width: 850px;
         margin-top: 32px;
         border: none;
         background-color: #ffffff;
