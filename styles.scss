@@ -44,20 +44,24 @@ button:hover {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .header {
+    width: 100%;
     background-color: $color-bckground;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
     &__box {
         position: relative;
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
     }
 
-        &__box::before {
+    &__box::before {
         content: "";
         background-image: url(./image/star-grin2.svg);
         position: absolute;
@@ -78,9 +82,10 @@ button:hover {
     }
 
     &__content {
-        padding-left: calc(50% - 600px);
-        padding-right: calc(50% - 600px);
+        // padding-left: 120px;
+        // padding-right: 120px;
         padding-top: 196px;
+        min-width: 1200px;
     }
 
     &__titl {
@@ -93,6 +98,7 @@ button:hover {
     }
 
     &__text {
+        width: 720px;
         padding-top: 24px;
         font-size: 24px;
         color: #202027;
@@ -122,6 +128,12 @@ button:hover {
         left: 59.3%;
         top: -333px;
         z-index: 2;
+        overflow: hidden;
+        margin-right: 0;
+    }
+
+    &__imgBig {
+        object-fit: cover;
     }
 
     &__anim-strip {
@@ -134,6 +146,9 @@ button:hover {
         /*удалить пример высоты полосы анимации*/
     }
 
+    &__titl-phone {
+        display: none;
+    }
 
 }
 
@@ -157,10 +172,19 @@ button:hover {
     height: 83px;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #202027;
+}
+
 .top-games {
     background-color: $color-top;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
     &__titl {
         padding-top: 94px;
@@ -179,13 +203,21 @@ button:hover {
         text-align: left;
     }
 
+    &__titl-phone {
+        display: none;
+    }
+
     &__img-big {
         position: absolute;
         left: 64.9%;
         top: 77px;
-        width: 585px;
-        height: 585px;
         z-index: 2;
+        // max-width: 505px;
+        overflow: hidden;
+    }
+
+    &__imgBig {
+        object-fit: cover;
     }
 
     &__box {
@@ -208,6 +240,8 @@ button:hover {
         background-color: #ffffff;
         cursor: pointer;
         transition: transform 0.3s ease;
+        position: relative;
+        z-index: 3;
 
         &_1-3 {
             max-height: 473px;
@@ -301,14 +335,14 @@ button:hover {
     }
 
     &__box::before {
-    content: "";
-    background-image: url(./image/star-top3.svg);
-    position: absolute;
-    left: 96.7%;
-    top: 48px;
-    width: 35px;
-    height: 35px;
-}
+        content: "";
+        background-image: url(./image/star-top3.svg);
+        position: absolute;
+        left: 96.7%;
+        top: 48px;
+        width: 35px;
+        height: 35px;
+    }
 
     &__box::after {
         content: "";
@@ -329,7 +363,9 @@ button:hover {
     }
 
     &__card {
+        max-width: 1200px;
         max-height: 500px;
+        min-width: 850px;
         margin-top: 32px;
         border: none;
         background-color: #ffffff;
@@ -352,8 +388,8 @@ button:hover {
         font-size: 48px;
         font-weight: 700;
 
-        &_2row {
-            margin-top: 0;
+        &_spc {
+            white-space: nowrap;
         }
     }
 
@@ -361,9 +397,11 @@ button:hover {
         margin-top: 24px;
         font-size: 24px;
         font-weight: 400;
+        max-width: 497px;
+        line-height: 32px;
 
-        &_2rw {
-            margin-top: 3px;
+        &_spc {
+            white-space: nowrap;
         }
     }
 
@@ -397,21 +435,21 @@ button:hover {
     left: 86.7%;
     top: 97.6%;
     width: 41px;
-    height: 41px; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    height: 41px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-    .for::after {
-        content: "";
-        background-image: url(./image/star-for2.svg);
-        position: absolute;
-        left: 91.5%;
-        top: 96.2%;
-        width: 69px;
-        height: 69px;
-        background-repeat: no-repeat;
-    }
+.for::after {
+    content: "";
+    background-image: url(./image/star-for2.svg);
+    position: absolute;
+    left: 91.5%;
+    top: 96.2%;
+    width: 69px;
+    height: 69px;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -427,3 +465,7 @@ button:hover {
         text-align: center;
     }
 }
+
+@import "tablet";
+@import "phone";
+@import "js-test";

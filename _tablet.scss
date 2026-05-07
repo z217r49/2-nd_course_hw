@@ -1,0 +1,131 @@
+@media (min-width: 1023px) and (max-width: 1088px) {
+    .center {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 1022px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+
+        &__box {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__content {
+            padding-top: 147px;
+            min-width: 0;
+        }
+
+        &__titl {
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+            // padding-left: calc(50% - 624px);
+            // padding-right: calc(50% - 624px);
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 16px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__text-smbld {
+            padding-top: 24px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__btn {
+            margin-top: 34px;
+            margin-left: calc(50% - 143px);
+            margin-right: calc(50% - 143px);
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__imgBig {
+            display: none;
+        }
+
+        &__anim-strip {
+            margin-top: 131px;
+            height: 51px;
+        }
+
+        &__star-big {
+            display: none;
+        }
+
+    }
+
+    .header::before {
+        left: 90%;
+        top: 423px;
+    }
+
+    .header::after {
+        left: 82%;
+        top: 445px;
+    }
+
+    .top-games {
+        display: none;
+    }
+
+    .for {
+        &__box::before {
+            left: 89%;
+            top: 52px;
+        }
+
+        &__box::after {
+            left: 92%;
+            top: 70px;
+        }
+
+        &__card {
+            min-width: 0;
+        }
+
+        &__subtitle {
+            margin-top: 16px;
+            font-size: 36px;
+            line-height: 30px;
+        }
+
+        &__text {
+            margin-top: 16px;
+            font-size: 16px;
+        }
+
+        &__btn {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .for::before {
+        left: 86.7%;
+        top: 97.6%;
+    }
+
+    .for::after {
+        left: 89.5%;
+        top: 96.2%;
+        width: 69px;
+    }
+}
+

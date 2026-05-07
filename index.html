@@ -14,153 +14,159 @@
 </head>
 
 <body>
+
     <section class="header">
         <div class="header__box">
             <div class="header__content">
                 <p class="header__titl">Добро пожаловать</p>
-                <p class="header__titl">на мой сайт мини-игр</p>
-                <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай <span
-                        class="header__text-smbld">«Поехали!»</span> и <span
-                        class="header__text-smbld">приступай.</span></p>
+                <p class="header__titl"><span class="header__spc">на мой сайт</span> мини-игр</p>
+                <p class="header__text"><span class="header__spc">Тебе предстоит пройти несколько</span> <span
+                        class="header__spc">увлекательных игр. Если готов,</span> <span class="header__spc">нажимай
+                        <span class="header__text-smbld">«Поехали!»</span> и <span
+                            class="header__text-smbld">приступай.</span></span></p>
                 <form action="#top-games">
                     <button class="header__btn">Поехали!</button>
-                    <div class="header__star-big">
-                        <img src="./image/star-big-grin.svg" alt="star">
-                    </div>
                 </form>
+            </div>
+            <div class="header__star-big">
+                <img class="header__imgBig" src="./image/star-big-grin.svg" alt="star">
+                <img class="header__imgBig-phone" src="./image/star-phone-grin-big.svg" alt="star">
             </div>
         </div>
         <div class="header__anim-strip">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
     </section>
-    <section class="top-games center">
-        <div class="top-games__img-big">
-            <img src="./image/star-top-big.svg" alt="star">
-        </div>
-        <h2 class="top-games__titl">Об играх</h2>
-        <p class="top-games__text">В моей коллекции представлено 6 игр на разные темы.</p>
-        <p class="top-games__text">Игры несложные — в них может поиграть каждый.</p>
-        <p class="top-games__text">Все игры доступны для пользования.</p>
+    <div class="top">
+        <section class="top-games center">
+            <div class="top-games__img-big">
+                <img class="top-games__imgBig" src="./image/star-top-big.svg" alt="star">
+            </div>
+            <h2 class="top-games__titl">Об играх</h2>
+            <p class="top-games__text">В моей коллекции представлено 6 игр на разные темы.</p>
+            <p class="top-games__text">Игры несложные — в них может поиграть каждый.</p>
+            <p class="top-games__text">Все игры доступны для пользования.</p>
+            <article id="top-games" class="top-games__box">
+                <div class="top-games__block">
+                    <a href="#game-1">
+                        <div class="top-games__card top-games__card_1-3">
+                            <img class="top-games__img" src="./image/cart-game-1.jpg" alt="Угадай число">
+                            <p class="top-games__nmbr">Игра № 1</p>
+                            <h2 class="top-games__ttl-card  top-games__ttl-card_1rw">Угадай число</h2>
+                        </div>
+                    </a>
+                    <a href="#game-4">
+                        <div class="top-games__card top-games__card_4-6">
+                            <img class="top-games__img" src="./image/cart-game-4.jpg" alt="Угадай число">
+                            <p class="top-games__nmbr">Игра № 4</p>
+                            <p class="top-games__ttl-card">Камень,</p>
+                            <p class="top-games__ttl-card  top-games__ttl-card_3rw">ножницы,</p>
+                            <p class="top-games__ttl-card  top-games__ttl-card_2rw">бумага</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-games__block">
+                    <a href="#game-2">
+                        <div class="top-games__card top-games__card_2-5">
+                            <img class="top-games__img" src="./image/cart-game-2.jpg" alt="Угадай число">
+                            <p class="top-games__nmbr">Игра № 2</p>
+                            <p class="top-games__ttl-card">Простая</p>
+                            <p class="top-games__ttl-card top-games__ttl-card_2rw">арифметика</p>
+                        </div>
+                    </a>
+                    <a href="#game-5">
+                        <div class="top-games__card top-games__card_2-5">
+                            <img class="top-games__img" src="./image/cart-game-5.jpg" alt="Угадай число">
+                            <p class="top-games__nmbr">Игра № 5</p>
+                            <p class="top-games__ttl-card">Простая</p>
+                            <p class="top-games__ttl-card   top-games__ttl-card_2rw">викторина</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-games__block">
+                    <a href="#game-3">
+                        <div class="top-games__card top-games__card_1-3">
+                            <img class="top-games__img" src="./image/cart-game-3.jpg" alt="Угадай число">
+                            <p class="top-games__nmbr">Игра № 3</p>
+                            <h2 class="top-games__ttl-card   top-games__ttl-card_1rw">Переверни текст</h2>
+                        </div>
+                    </a>
+                    <a href="#game-6">
+                        <div class="top-games__card  top-games__card_4-6">
+                            <img class="top-games__img" src="./image/cart-game-6.jpg" alt="Угадай число">
+                            <p class="top-games__nmbr">Игра № 6</p>
+                            <p class="top-games__ttl-card">Генератор</p>
+                            <p class="top-games__ttl-card   top-games__ttl-card_3rw">случайных</p>
+                            <p class="top-games__ttl-card   top-games__ttl-card_2rw">цветов</p>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section class="for center">
+            <div class="for__box">
+                <h2 class="for__title">Мини-игры</h2>
+                <article id="game-1" class="for__card">
+                    <div class="for__content for__content_item1">
+                        <h3 class="for__subtitle">Угадай число</h3>
+                        <p class="for__text"><span class="for__text for__text_spc">Попробуй угадать случайное</span>
+                            <span class="for__text for__text_spc">число от 1 до 100.</span></p>
+                        <button class="for__btn">Играть!</button>
+                    </div>
+                    <img class="for__img for__img_item2" src="./image/cart-game-1.jpg" alt="Угадай число">
+                </article>
+                <article id="game-2" class="for__card">
+                    <img class="for__img for__img_rew for__img_item2" src="./image/cart-game-2.jpg" alt="Угадай число">
+                    <div class="for__content for__content_rew for__content_item1">
+                        <h3 class="for__subtitle for__subtitle_dopmrgn"><span
+                                class="for__subtitle for__subtitle_spc">Простая</span> <span
+                                class="for__subtitle for__subtitle_spc">арифметика</span></h3>
+                        <p class="for__text"><span class="for__text for__text_spc">Попробуй решить простые</span>
+                            <span class="for__text for__text_spc">арифметические задачи.</span>
+                        </p>
+                        <button class="for__btn">Играть!</button>
+                    </div>
+                </article>
+                <article id="game-3" class="for__card">
+                    <div class="for__content for__content_item1">
+                        <h3 class="for__subtitle">Переверни текст</h3>
+                        <p class="for__text"><span class="for__text for__text_spc">Попробуй ввести текст, который</span>
+                            <span class="for__text for__text_spc">будет перевернут.</span>
+                        </p>
+                        <button class="for__btn">Играть!</button>
+                    </div>
+                    <img class="for__img for__img_item2" src="./image/cart-game-3.jpg" alt="Угадай число">
+                </article>
+                <article id="game-4" class="for__card">
+                    <img class="for__img for__img_rew for__img_item2" src="./image/cart-game-4.jpg" alt="Угадай число">
+                    <div class="for__content for__content_rew for__content_item1">
+                        <h3 class="for__subtitle for__subtitle_dopmrgn">Камень,<br>ножницы,<br>бумага</h3>
+                        <p class="for__text"><span class="for__text for__text_spc">Сыграй в популярную игру</span> <span
+                                class="for__text for__text_spc">против компьютера.</span></p>
+                        <button class="for__btn">Играть!</button>
+                </article>
+                <article id="game-5" class="for__card">
+                    <div class="for__content for__content_item1">
+                        <h3 class="for__subtitle">Простая<br>викторина</h3>
+                        <p class="for__text"><span class="for__text for__text_spc">Отвечай на вопросы викторины</span>
+                            <span class="for__text for__text_spc">с вариантами ответов.</span></p>
+                        <button class="for__btn">Играть!</button>
+                    </div>
+                    <img class="for__img for__img_item2" src="./image/cart-game-5.jpg" alt="Угадай число">
+                </article>
+                <article id="game-6" class="for__card">
+                    <img class="for__img for__img_rew for__img_item2" src="./image/cart-game-6.jpg" alt="Угадай число">
+                    <div class="for__content for__content_rew for__content_item1">
+                        <h3 class="for__subtitle for__subtitle_dopmrgn">Генератор<br>случайных<br>цветов</h3>
+                        <p class="for__text"><span class="for__text for__text_spc-phone">Игра, в которой при
+                                клике</span>
+                            <span class="for__text for__text_spc-phone">на кнопку фон страницы</span> <span
+                                class="for__text for__text_spc-phone">меняется на случайный.</span>
+                        </p>
+                        <button class="for__btn">Играть!</button>
+                </article>
+            </div>
+        </section>
+    </div>
 
-        <article id="top-games" class="top-games__box">
-            <div class="top-games__block">
-                <a href="#game-1">
-                    <div class="top-games__card top-games__card_1-3">
-                        <img class="top-games__img" src="./image/cart-game-1.jpg" alt="Угадай число">
-                        <p class="top-games__nmbr">Игра № 1</p>
-                        <h2 class="top-games__ttl-card  top-games__ttl-card_1rw">Угадай число</h2>
-                    </div>
-                </a>
-                <a href="#game-4">
-                    <div class="top-games__card top-games__card_4-6">
-                        <img class="top-games__img" src="./image/cart-game-4.jpg" alt="Угадай число">
-                        <p class="top-games__nmbr">Игра № 4</p>
-                        <p class="top-games__ttl-card">Камень,</p>
-                        <p class="top-games__ttl-card  top-games__ttl-card_3rw">ножницы,</p>
-                        <p class="top-games__ttl-card  top-games__ttl-card_2rw">бумага</p>
-                    </div>
-                </a>
-            </div>
-            <div class="top-games__block">
-                <a href="#game-2">
-                    <div class="top-games__card top-games__card_2-5">
-                        <img class="top-games__img" src="./image/cart-game-2.jpg" alt="Угадай число">
-                        <p class="top-games__nmbr">Игра № 2</p>
-                        <p class="top-games__ttl-card">Простая</p>
-                        <p class="top-games__ttl-card top-games__ttl-card_2rw">арифметика</p>
-                    </div>
-                </a>
-                <a href="#game-5">
-                    <div class="top-games__card top-games__card_2-5">
-                        <img class="top-games__img" src="./image/cart-game-5.jpg" alt="Угадай число">
-                        <p class="top-games__nmbr">Игра № 5</p>
-                        <p class="top-games__ttl-card">Простая</p>
-                        <p class="top-games__ttl-card   top-games__ttl-card_2rw">викторина</p>
-                    </div>
-                </a>
-            </div>
-            <div class="top-games__block">
-                <a href="#game-3">
-                    <div class="top-games__card top-games__card_1-3">
-                        <img class="top-games__img" src="./image/cart-game-3.jpg" alt="Угадай число">
-                        <p class="top-games__nmbr">Игра № 3</p>
-                        <h2 class="top-games__ttl-card   top-games__ttl-card_1rw">Переверни текст</h2>
-                    </div>
-                </a>
-                <a href="#game-6">
-                    <div class="top-games__card  top-games__card_4-6">
-                        <img class="top-games__img" src="./image/cart-game-6.jpg" alt="Угадай число">
-                        <p class="top-games__nmbr">Игра № 6</p>
-                        <p class="top-games__ttl-card">Генератор</p>
-                        <p class="top-games__ttl-card   top-games__ttl-card_3rw">случайных</p>
-                        <p class="top-games__ttl-card   top-games__ttl-card_2rw">цветов</p>
-                    </div>
-                </a>
-            </div>
-        </article>
-    </section>
-    <section class="for center">
-        <div class="for__box">
-            <h2 class="for__title">Мини-игры</h2>
-            <article id="game-1" class="for__card">
-                <div class="for__content">
-                    <h3 class="for__subtitle">Угадай число</h3>
-                    <p class="for__text">Попробуй угадать случайное</p>
-                    <p class="for__text for__text_2rw">число от 1 до 100.</p>
-                    <button class="for__btn">Играть!</button>
-                </div>
-                <img class="for__img" src="./image/cart-game-1.jpg" alt="Угадай число">
-            </article>
-            <article id="game-2" class="for__card">
-                <img class="for__img for__img_rew" src="./image/cart-game-2.jpg" alt="Угадай число">
-                <div class="for__content for__content_rew">
-                    <h3 class="for__subtitle">Простая</h3>
-                    <h3 class="for__subtitle for__subtitle_2row">арифметика</h3>
-                    <p class="for__text">Попробуй решить простые</p>
-                    <p class="for__text for__text_2rw">арифметические задачи.</p>
-                    <button class="for__btn">Играть!</button>
-                </div>
-            </article>
-            <article id="game-3" class="for__card">
-                <div class="for__content">
-                    <h3 class="for__subtitle">Переверни текст</h3>
-                    <p class="for__text">Попробуй ввести текст, который</p>
-                    <p class="for__text for__text_2rw">будет перевернут.</p>
-                    <button class="for__btn">Играть!</button>
-                </div>
-                <img class="for__img" src="./image/cart-game-3.jpg" alt="Угадай число">
-            </article>
-            <article id="game-4" class="for__card">
-                <img class="for__img for__img_rew" src="./image/cart-game-4.jpg" alt="Угадай число">
-                <div class="for__content for__content_rew">
-                    <h3 class="for__subtitle">Камень,</h3>
-                    <h3 class="for__subtitle for__subtitle_2row">ножницы,</h3>
-                    <h3 class="for__subtitle for__subtitle_2row">бумага</h3>
-                    <p class="for__text">Сыграй в популярную игру</p>
-                    <p class="for__text for__text_2rw">против компьютера.</p>
-                    <button class="for__btn">Играть!</button>
-            </article>
-            <article id="game-5" class="for__card">
-                <div class="for__content">
-                    <h3 class="for__subtitle">Простая</h3>
-                    <h3 class="for__subtitle for__subtitle_2row">викторина</h3>
-                    <p class="for__text">Отвечай на вопросы викторины</p>
-                    <p class="for__text for__text_2rw">с вариантами ответов.</p>
-                    <button class="for__btn">Играть!</button>
-                </div>
-                <img class="for__img" src="./image/cart-game-5.jpg" alt="Угадай число">
-            </article>
-            <article id="game-6" class="for__card">
-                <img class="for__img for__img_rew" src="./image/cart-game-6.jpg" alt="Угадай число">
-                <div class="for__content for__content_rew">
-                    <h3 class="for__subtitle">Генератор</h3>
-                    <h3 class="for__subtitle for__subtitle_2row">случайных</h3>
-                    <h3 class="for__subtitle for__subtitle_2row">цветов</h3>
-                    <p class="for__text">Игра, в которой при клике на кнопку</p>
-                    <p class="for__text for__text_2rw">фон страницы меняется на случайный.</p>
-                    <button class="for__btn">Играть!</button>
-            </article>
-        </div>
-    </section>
     <footer class="footer">
         <p class="footer__cntnt">Все права защищены.</p>
     </footer>
