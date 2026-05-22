@@ -167,6 +167,7 @@ button:hover {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 .top-games__titl {
   padding-top: 94px;
@@ -288,7 +289,7 @@ button:hover {
 }
 
 .for {
-  padding-top: 96px;
+  padding-top: 56px;
   padding-bottom: 144px;
   background-color: #202027;
   position: relative;
