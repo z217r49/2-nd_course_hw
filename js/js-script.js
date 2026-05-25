@@ -1,4 +1,5 @@
-const randomNumber = Math.floor(Math.random() * 100) + 1;
+// Игра "Уадай число"
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 function getUserNumber() {
     let userNumber;

@@ -71,7 +71,7 @@ alert(enteringNumber())
 
 function cubeNumber() {
     const userInput = prompt('Введите любое число');
-    const userNumber = Number(userInput);    
+    const userNumber = Number(userInput);
 
     if (isNaN(userNumber)) {
         alert('Переданный параметр не является числом');
