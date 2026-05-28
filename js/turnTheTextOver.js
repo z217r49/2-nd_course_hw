@@ -1,4 +1,4 @@
-function turnTheTextOver(params) {
+function turnTheTextOver() {
     let userText = prompt('Введите текст, который хотите перевернуть');
 
     if (userText === null) {

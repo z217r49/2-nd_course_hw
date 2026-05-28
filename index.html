@@ -171,7 +171,14 @@
                         <p class="for__text"><span class="for__text for__text_spc">Отвечай на вопросы викторины</span>
                             <span class="for__text for__text_spc">с вариантами ответов.</span>
                         </p>
-                        <button class="for__btn">Играть!</button>
+                        <button class="for__btn for__btn_quiz">Играть!</button>
+                        <script src="./js/quiz.js"></script>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const playButton = document.querySelector('.for__btn_quiz');
+                                playButton.addEventListener('click', quizGame);
+                            });
+                        </script>                        
                     </div>
                     <img class="for__img for__img_item2" src="./image/cart-game-5.jpg" alt="Угадай число">
                 </article>
