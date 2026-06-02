@@ -1,79 +1,79 @@
-// // Задание № 1
-// let str = 'js';
-// let upperCaseStr = str.toUpperCase();
-// console.log(upperCaseStr);
+// Задание № 1
+let str = 'js';
+let upperCaseStr = str.toUpperCase();
+console.log(upperCaseStr);
 
-// // Задание № 2
-// function acceptsArr(array, str2) {
-//     return array.filter(item => item.toLowerCase().startsWith(str2.toLowerCase()));
-// }
+// Задание № 2
+function acceptsArr(array, str2) {
+    return array.filter(item => item.toLowerCase().startsWith(str2.toLowerCase()));
+}
 
-// const countries = ['Россия', 'Румыния', 'Хорватия', 'Руанда', 'Норвегия'];
-// const countriesR = acceptsArr(countries, 'Р');
-// console.log(countriesR);
+const countries = ['Россия', 'Румыния', 'Хорватия', 'Руанда', 'Норвегия'];
+const countriesR = acceptsArr(countries, 'Р');
+console.log(countriesR);
 
-// // Задание № 3
-// const num = 32.58884;
+// Задание № 3
+const num = 32.58884;
 
-// console.log('Округление до минимального целого значения: ' + Math.floor(num));
-// console.log('Округление до максимального целого значения: ' + Math.ceil(num));
-// console.log('Округление до ближайшего целого значения: ' + Math.round(num));
+console.log('Округление до минимального целого значения: ' + Math.floor(num));
+console.log('Округление до максимального целого значения: ' + Math.ceil(num));
+console.log('Округление до ближайшего целого значения: ' + Math.round(num));
 
-// // Задание № 4
-// const numbs = [52, 53, 49, 77, 21, 32];
-// const min = Math.min(...numbs);
-// const max = Math.max(...numbs);
+// Задание № 4
+const numbs = [52, 53, 49, 77, 21, 32];
+const min = Math.min(...numbs);
+const max = Math.max(...numbs);
 
-// console.log(`Минимальное значение: ${min}`);
-// console.log(`Максимальное значение: ${max}`);
+console.log(`Минимальное значение: ${min}`);
+console.log(`Максимальное значение: ${max}`);
 
-// // Задание № 5
-// function Arr5() {
-//     const result = [];
-//     for (let i = 0; i < 10; i++) {
-//         const randomNum = Math.floor(Math.random() * 10) + 1;
-//         result.push(randomNum);
-//     }
-//     return result;
-// }
+// Задание № 5
+function Arr5() {
+    const result = [];
+    for (let i = 0; i < 10; i++) {
+        const randomNum = Math.floor(Math.random() * 10) + 1;
+        result.push(randomNum);
+    }
+    return result;
+}
 
-// const result = Arr5();
-// console.log(result);
+const result = Arr5();
+console.log(result);
 
-// // Задание № 6
-// function creatNumbs(num6) {
-//     const result = [];
-//     for (let i = 0; i < num6 / 2; i++) {
-//         const randomNum = Math.floor(Math.random() * 10) + 1;
-//         result.push(randomNum);
-//     }
-//     return result;
-// }
+// Задание № 6
+function creatNumbs(num6) {
+    const result = [];
+    for (let i = 0; i < num6 / 2; i++) {
+        const randomNum = Math.floor(Math.random() * 10) + 1;
+        result.push(randomNum);
+    }
+    return result;
+}
 
-// const Arr6 = creatNumbs(14);
-// console.log(Arr6);
+const Arr6 = creatNumbs(14);
+console.log(Arr6);
 
-// // Задание № 7
-// function creatNumbs(min, max) {
-//     const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-//     return randomNum;
-// }
+// Задание № 7
+function creatNumbs(min, max) {
+    const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNum;
+}
 
-// const oneRandomNumber = creatNumbs(2, 5);
-// console.log(oneRandomNumber);
+const oneRandomNumber = creatNumbs(2, 5);
+console.log(oneRandomNumber);
 
-// // Задание № 8
-// let todayDate = new Date();
-// console.log(todayDate);
+// Задание № 8
+let todayDate = new Date();
+console.log(todayDate);
 
-// // Задание № 9
-// let currentDate = new Date();
+// Задание № 9
+let currentDate = new Date();
 
-// let days73 = 73 * 24 * 60 * 60 * 1000;
-// let searchDate = currentDate.getTime() + days73;
-// let daysFuture73 = new Date(searchDate);
+let days73 = 73 * 24 * 60 * 60 * 1000;
+let searchDate = currentDate.getTime() + days73;
+let daysFuture73 = new Date(searchDate);
 
-// console.log(daysFuture73);
+console.log(daysFuture73);
 
 // Задание № 10
 function formatDate(date) {
