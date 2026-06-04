@@ -28,29 +28,25 @@ console.log(`Минимальное значение: ${min}`);
 console.log(`Максимальное значение: ${max}`);
 
 // Задание № 5
-function Arr5() {
-    const result = [];
-    for (let i = 0; i < 10; i++) {
-        const randomNum = Math.floor(Math.random() * 10) + 1;
-        result.push(randomNum);
-    }
-    return result;
+function printRandomNumber() {
+    const randomNum = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNum);
 }
 
-const result = Arr5();
-console.log(result);
+printRandomNumber();
+
 
 // Задание № 6
-function creatNumbs(num6) {
+function creatNumbs6(num6) {
     const result = [];
     for (let i = 0; i < num6 / 2; i++) {
-        const randomNum = Math.floor(Math.random() * 10) + 1;
-        result.push(randomNum);
+        const randomNum6 = Math.floor(Math.random() * (num6 + 1));
+        result.push(randomNum6);
     }
     return result;
 }
 
-const Arr6 = creatNumbs(14);
+const Arr6 = creatNumbs6(14);
 console.log(Arr6);
 
 // Задание № 7
@@ -67,13 +63,13 @@ let todayDate = new Date();
 console.log(todayDate);
 
 // Задание № 9
-let currentDate = new Date();
+const currentDate = new Date();
+const futureDate = new Date(currentDate);
+const currentDay = currentDate.getDate();
 
-let days73 = 73 * 24 * 60 * 60 * 1000;
-let searchDate = currentDate.getTime() + days73;
-let daysFuture73 = new Date(searchDate);
+futureDate.setDate(currentDay + 73);
 
-console.log(daysFuture73);
+console.log(futureDate);
 
 // Задание № 10
 function formatDate(date) {
