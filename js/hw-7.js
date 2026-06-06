@@ -46,7 +46,7 @@ function creatNumbs6(num6) {
     return result;
 }
 
-const Arr6 = creatNumbs6(14);
+const Arr6 = creatNumbs6(7);
 console.log(Arr6);
 
 // Задание № 7
