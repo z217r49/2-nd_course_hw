@@ -121,6 +121,10 @@ const lengths = arrayWordLengths(words);
 console.log(lengths);
 
 //  Задание № 13
+function getNumbers(arr) {
+    return arr.map(item => item * -1);
+}
+
 function getRandomArray(length, min = 1, max = 10) {
     const result = [];
     for (let i = 0; i < length; i++) {
@@ -130,27 +134,11 @@ function getRandomArray(length, min = 1, max = 10) {
     return result;
 }
 
-function getRandomNegativArray(length, min = 1, max = 10) {
-    const negativResult = [];
-    for (let i = 0; i < length; i++) {
-        const randomNegativNumbs = Math.floor(Math.random() * (max - min + 1)) + min;
-        const negativNum = -randomNegativNumbs
-        negativResult.push(negativNum);
-    }
-    return negativResult;
-}
-
 const arr13 = getRandomArray(5, 1, 5);
 console.log('Исходный массив:', arr13); 
 
-const negativArr13 = getRandomNegativArray(5, 1, 5);
-console.log('Исходный массив отрицательных чисел:', negativArr13);
-
-const combinedArray = [...arr13, ...negativArr13];
-console.log('Объединенный массив чисел:', combinedArray);
-
-const filteredCombinedArray = combinedArray.filter(el => el < 0);
-console.log('Отрицательные значения объединенного массива:', filteredCombinedArray)
+const getArr13 = getNumbers(arr13);
+console.log('Массив отрицательных значений:', getArr13); 
 
 //  Задание № 14
 const randomArray14 = Array.from({ length: 10 }, () =>
