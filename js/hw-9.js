@@ -36,8 +36,6 @@ if (headingTxt && buttonTxt) {
 // Задание № 4
 const allDescriptions = document.querySelectorAll('h2.description');
 
-console.log(allDescriptions);
-
 allDescriptions.forEach(function (description) {
     description.textContent = 'Измененный текст';
 });
@@ -50,20 +48,23 @@ paragraphDescriptions.forEach(function (paragraph) {
 });
 
 // Задание № 6
-const newDiv = document.createElement('div');
-newDiv.textContent = 'Новый абзац';
-newDiv.className = 'taskBox';
-newDiv.style.backgroundColor = 'yellow';
-newDiv.style.marginTop = '10px';
+const btnJsNewDiv = document.querySelector('.btnJs_newDiv');
 
-document.body.appendChild(newDiv);
+if (btnJsNewDiv) {
+    btnJsNewDiv.addEventListener('click', function () {
+        const newDiv = document.createElement('div');
+        newDiv.textContent = 'Новый абзац';
+        newDiv.className = 'taskBox';
+        newDiv.style.backgroundColor = 'yellow';
+        newDiv.style.marginTop = '10px';
+
+        document.body.appendChild(newDiv);
+    });
+}
 
 // Задание № 7
 const paragrafDel = document.querySelector('p.description');
 const btnJsDel = document.querySelector('.btnJs_del');
-
-console.log(paragrafDel);
-console.log(btnJsDel);
 
 if (paragrafDel && btnJsDel) {
     btnJsDel.addEventListener('click', function () {

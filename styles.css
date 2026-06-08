@@ -700,6 +700,9 @@ button:hover {
   padding-right: 5px;
   margin-top: 30px;
 }
+.btnJS_newDiv {
+  margin-bottom: 30px;
+}
 
 .invisible {
   visibility: hidden;
