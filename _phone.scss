@@ -40,11 +40,22 @@
             margin-right: calc(50% - 140px);
         }
 
+        &__anim-strip-item {
+            font-size: 16px;
+        }
+
+        &__anim-strip-icon {
+        width: 19px;
+        height: 19px;
+        margin: 0 27px;
+        flex-shrink: 0;
+    }
+
         &__star-big {
             display: block;
             min-width: 223px;
             left: 50%;
-            top: -104px;            
+            top: -104px;
         }
 
         &__imgBig {
@@ -138,11 +149,11 @@
         &__text {
             line-height: 20px;
             margin-top: 0;            
+        }
 
-            &_spc-phone {
+        &__text-phone {
                 white-space: nowrap;
             }
-        }
 
         &__btn {
             margin-top: 32px;
@@ -153,6 +164,7 @@
         }
 
         &__img {
+            height: 260px;//!!!!!!
 
             &_item2 {
                 order: 1;
@@ -176,5 +188,9 @@
             font-size: 16px;
         }
     }
+
+}
+
+@media (max-width:480px) {
 
 }

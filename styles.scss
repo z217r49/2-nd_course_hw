@@ -57,8 +57,10 @@ button:hover {
 
     &__box {
         position: relative;
-        padding-left: calc(50% - 600px);
-        padding-right: calc(50% - 600px);
+        // padding-left: calc(50% - 600px);
+        // padding-right: calc(50% - 600px);
+        padding-left: 120px;
+        padding-right: 120px;
     }
 
     &__box::before {
@@ -85,7 +87,7 @@ button:hover {
         // padding-left: 120px;
         // padding-right: 120px;
         padding-top: 196px;
-        min-width: 1200px;
+        max-width: 1200px;
     }
 
     &__titl {
@@ -143,8 +145,44 @@ button:hover {
         position: relative;
         z-index: 3;
         height: 90px;
-        /*удалить пример высоты полосы анимации*/
+        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
+
+    &__anim-strip-content {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll-left 30s linear infinite;
+    }
+
+    &__anim-strip-item {
+        font-size: 30px;
+        font-weight: 700;
+        color: #202027;
+        flex-shrink: 0;
+    }
+
+    &__anim-strip-icon {
+        width: 36px;
+        height: 36px;
+        margin: 0 51px;
+        flex-shrink: 0;
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+
+
+
 
     &__titl-phone {
         display: none;
@@ -181,7 +219,7 @@ button:hover {
 }
 
 .top-games {
-    background-color: $color-top;
+    // background-color: $color-top;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -328,7 +366,7 @@ button:hover {
 .for {
     padding-top: 56px;
     padding-bottom: 144px;
-    background-color: $color-top;
+    // background-color: $color-top;
     position: relative;
 
     &__box {
@@ -388,22 +426,26 @@ button:hover {
         margin-top: 48px;
         font-size: 48px;
         font-weight: 700;
+    }
 
-        &_spc {
-            white-space: nowrap;
-        }
+    &__subtitle-spc {
+        white-space: nowrap;
     }
 
     &__text {
         margin-top: 24px;
-        font-size: 24px;
         font-weight: 400;
         max-width: 497px;
         line-height: 32px;
+    }
 
-        &_spc {
-            white-space: nowrap;
-        }
+    &__text-spn {
+        font-size: 24px;
+    }
+
+    &__text-spc {
+        white-space: nowrap;
+        font-size: 24px;
     }
 
     &__btn {
