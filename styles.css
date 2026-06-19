@@ -315,7 +315,7 @@ button:hover {
 
 .for {
   padding-top: 56px;
-  padding-bottom: 144px;
+  padding-bottom: 149px;
   position: relative;
 }
 .for__box {
@@ -350,7 +350,7 @@ button:hover {
   max-width: 1200px;
   max-height: 500px;
   min-width: 850px;
-  margin-top: 32px;
+  margin-top: 33px;
   border: none;
   background-color: #ffffff;
   border-radius: 30px;
@@ -369,14 +369,17 @@ button:hover {
   font-size: 48px;
   font-weight: 700;
 }
+.for__subtitle_dopmrgn {
+  margin-top: 50px;
+}
 .for__subtitle-spc {
   white-space: nowrap;
 }
 .for__text {
-  margin-top: 24px;
+  margin-top: 26px;
   font-weight: 400;
   max-width: 497px;
-  line-height: 32px;
+  line-height: 30px;
 }
 .for__text-spn {
   font-size: 24px;
@@ -385,9 +388,11 @@ button:hover {
   white-space: nowrap;
   font-size: 24px;
 }
+.for__text-spc1 {
+  font-size: 24px;
+}
 .for__btn {
-  margin-top: 36px;
-  margin-bottom: 207px;
+  margin-top: 32px;
   width: 247px;
   height: 66px;
   color: #ffffff;
@@ -440,7 +445,26 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 1090px) {
+  .top-games {
+    display: none;
+  }
+}
+@media (max-width: 1240px) {
+  .for__subtitle {
+    font-size: 28px;
+  }
+  .for__text-spn {
+    font-size: 16px;
+  }
+  .for__text-spc {
+    font-size: 16px;
+  }
+  .for__text-spc1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1023px) {
   .header__titl {
     font-size: 40px;
     line-height: 49px;
@@ -449,7 +473,7 @@ button:hover {
   .header__text {
     text-align: center;
     font-size: 22px;
-    width: 540px;
+    width: auto;
   }
   .header__btn {
     margin-top: 34px;
@@ -461,7 +485,7 @@ button:hover {
     font-weight: 600;
   }
   .header__anim-strip {
-    margin-top: 100px;
+    margin-top: 132px;
     height: 51px;
   }
   .header__anim-strip-item {
@@ -482,8 +506,8 @@ button:hover {
     left: 82%;
     top: 445px;
   }
-  .top-games {
-    display: none;
+  .for {
+    width: 100%;
   }
   .for__box::before {
     left: 89%;
@@ -498,8 +522,6 @@ button:hover {
   }
   .for__subtitle {
     margin-top: 16px;
-    font-size: 36px;
-    line-height: 30px;
   }
   .for__text {
     margin-top: 16px;
@@ -519,7 +541,39 @@ button:hover {
     width: 69px;
   }
 }
+@media (max-width: 974px) {
+  button {
+    font-size: 18px;
+  }
+  .for__subtitle {
+    font-size: 28px;
+  }
+  .for__text {
+    overflow-wrap: break-word;
+  }
+  .for__text-spn {
+    font-size: 16px;
+  }
+  .for__text-spc {
+    font-size: 16px;
+  }
+  .for__text-spc1 {
+    font-size: 16px;
+  }
+  .for__btn {
+    margin-top: 28px;
+    width: 200px;
+    height: 35px;
+  }
+}
 @media (max-width: 767px) {
+  .header__box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header__content {
+    padding-top: 146px;
+  }
   .header__box::before {
     content: "";
     background-image: url(./image/star-phone-grin2.svg);
@@ -544,9 +598,14 @@ button:hover {
     padding-top: 24px;
     width: 100%;
     line-height: 20px;
+    font-size: 16px;
   }
   .header__spc {
     white-space: nowrap;
+  }
+  .header__text-smbld {
+    font-size: 16px;
+    line-height: 0;
   }
   .header__btn {
     margin-top: 36px;
@@ -596,9 +655,14 @@ button:hover {
     height: 18px;
     background-repeat: no-repeat;
   }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .for {
     padding-top: 48px;
     padding-bottom: 12px;
+    max-width: 400px;
   }
   .for__box {
     display: flex;
@@ -646,8 +710,21 @@ button:hover {
     line-height: 20px;
     margin-top: 0;
   }
+  .for__text-spn {
+    font-size: 16px;
+  }
+  .for__text-spc {
+    font-size: 16px;
+  }
+  .for__text-spc1 {
+    font-size: 16px;
+  }
   .for__text-phone {
     white-space: nowrap;
+  }
+  .for__text-phone-br::before {
+    content: "\a" attr(title);
+    white-space: pre;
   }
   .for__btn {
     margin-top: 32px;
@@ -655,10 +732,7 @@ button:hover {
     height: 55px;
     font-size: 16px;
   }
-  .for__img {
-    height: 260px;
-  }
-  .for__img_item2 {
+  .for_item2 {
     order: 1;
   }
   .for::before {

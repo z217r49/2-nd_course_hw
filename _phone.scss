@@ -2,6 +2,15 @@
 
     .header {
 
+        &__box {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__content {
+            padding-top: 146px;
+        }
+
         &__box::before {
             content: "";
             background-image: url(./image/star-phone-grin2.svg);
@@ -28,10 +37,16 @@
             padding-top: 24px;
             width: 100%;
             line-height: 20px;
+            font-size: 16px;
         }
 
         &__spc {
             white-space: nowrap;
+        }
+
+        &__text-smbld {
+            font-size: 16px;
+            line-height: 0;
         }
 
         &__btn {
@@ -45,11 +60,11 @@
         }
 
         &__anim-strip-icon {
-        width: 19px;
-        height: 19px;
-        margin: 0 27px;
-        flex-shrink: 0;
-    }
+            width: 19px;
+            height: 19px;
+            margin: 0 27px;
+            flex-shrink: 0;
+        }
 
         &__star-big {
             display: block;
@@ -91,9 +106,15 @@
         background-repeat: no-repeat;
     }
 
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .for {
         padding-top: 48px;
         padding-bottom: 12px;
+        max-width: 400px;
 
         &__box {
             display: flex;
@@ -148,12 +169,29 @@
 
         &__text {
             line-height: 20px;
-            margin-top: 0;            
+            margin-top: 0;
+        }
+
+        &__text-spn {
+            font-size: 16px;
+        }
+
+        &__text-spc {
+            font-size: 16px;
+        }
+
+        &__text-spc1 {
+            font-size: 16px;
         }
 
         &__text-phone {
-                white-space: nowrap;
-            }
+            white-space: nowrap;
+        }
+// Визуальный перенос строки при помощи псевдоэлемента
+        &__text-phone-br::before {
+            content: '\A' attr(title);
+            white-space: pre;
+        }
 
         &__btn {
             margin-top: 32px;
@@ -163,34 +201,26 @@
 
         }
 
-        &__img {
-            height: 260px;//!!!!!!
-
-            &_item2 {
-                order: 1;
-            }
+        &_item2 {
+            order: 1;
         }
     }
 
-    .for::before {
-        display: none;
-    }
 
-    .for::after {
-        display: none;
-    }
-
-    .footer {
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        &__cntnt {
-            font-size: 16px;
-        }
-    }
-
+.for::before {
+    display: none;
 }
 
-@media (max-width:480px) {
+.for::after {
+    display: none;
+}
 
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__cntnt {
+        font-size: 16px;
+    }
+}
 }

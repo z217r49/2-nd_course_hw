@@ -365,8 +365,7 @@ button:hover {
 
 .for {
     padding-top: 56px;
-    padding-bottom: 144px;
-    // background-color: $color-top;
+    padding-bottom: 149px;
     position: relative;
 
     &__box {
@@ -405,7 +404,7 @@ button:hover {
         max-width: 1200px;
         max-height: 500px;
         min-width: 850px;
-        margin-top: 32px;
+        margin-top: 33px;
         border: none;
         background-color: #ffffff;
         border-radius: 30px;
@@ -428,15 +427,19 @@ button:hover {
         font-weight: 700;
     }
 
+    &__subtitle_dopmrgn {
+        margin-top: 50px;
+    }
+
     &__subtitle-spc {
         white-space: nowrap;
     }
 
     &__text {
-        margin-top: 24px;
+        margin-top: 26px;
         font-weight: 400;
         max-width: 497px;
-        line-height: 32px;
+        line-height: 30px;
     }
 
     &__text-spn {
@@ -448,9 +451,13 @@ button:hover {
         font-size: 24px;
     }
 
+        &__text-spc1 {
+        font-size: 24px;
+    }
+
     &__btn {
-        margin-top: 36px;
-        margin-bottom: 207px;
+        margin-top: 32px;
+        // margin-bottom: 207px;
         width: 247px;
         height: 66px;
         color: #ffffff;
