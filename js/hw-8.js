@@ -68,3 +68,8 @@ function sayHi(name) {
 }
 
 delayForSecond(() => sayHi('Глеб'));
+
+async function name(params) {
+    
+}
+
