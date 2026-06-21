@@ -566,6 +566,12 @@ button:hover {
     height: 35px;
   }
 }
+@media (min-width: 1441px) {
+  .header__box {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+}
 @media (max-width: 767px) {
   .header__box {
     padding-left: 0;

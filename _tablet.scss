@@ -164,3 +164,10 @@
         }
     }
 }
+
+@media (min-width: 1441px) {
+    .header__box {
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+    }
+}
