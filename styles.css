@@ -159,6 +159,9 @@ button:hover {
 .header__titl-phone {
   display: none;
 }
+.header__titl-phone {
+  display: none;
+}
 
 .header::before {
   content: "";
