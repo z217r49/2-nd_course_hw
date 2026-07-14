@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -53,8 +52,8 @@ button:hover {
 }
 .header__box {
   position: relative;
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: 120px;
+  padding-right: 120px;
 }
 .header__box::before {
   content: "";
@@ -76,7 +75,7 @@ button:hover {
 }
 .header__content {
   padding-top: 196px;
-  min-width: 1200px;
+  max-width: 1200px;
 }
 .header__titl {
   color: #202027;
@@ -128,7 +127,37 @@ button:hover {
   position: relative;
   z-index: 3;
   height: 90px;
-  /*удалить пример высоты полосы анимации*/
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.header__anim-strip-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
+.header__anim-strip-item {
+  font-size: 30px;
+  font-weight: 700;
+  color: #202027;
+  flex-shrink: 0;
+}
+.header__anim-strip-icon {
+  width: 36px;
+  height: 36px;
+  margin: 0 51px;
+  flex-shrink: 0;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.header__titl-phone {
+  display: none;
 }
 .header__titl-phone {
   display: none;
@@ -163,7 +192,6 @@ button:hover {
 }
 
 .top-games {
-  background-color: #202027;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -290,8 +318,7 @@ button:hover {
 
 .for {
   padding-top: 56px;
-  padding-bottom: 144px;
-  background-color: #202027;
+  padding-bottom: 149px;
   position: relative;
 }
 .for__box {
@@ -326,7 +353,7 @@ button:hover {
   max-width: 1200px;
   max-height: 500px;
   min-width: 850px;
-  margin-top: 32px;
+  margin-top: 33px;
   border: none;
   background-color: #ffffff;
   border-radius: 30px;
@@ -345,22 +372,30 @@ button:hover {
   font-size: 48px;
   font-weight: 700;
 }
-.for__subtitle_spc {
+.for__subtitle_dopmrgn {
+  margin-top: 50px;
+}
+.for__subtitle-spc {
   white-space: nowrap;
 }
 .for__text {
-  margin-top: 24px;
-  font-size: 24px;
+  margin-top: 26px;
   font-weight: 400;
   max-width: 497px;
-  line-height: 32px;
+  line-height: 30px;
 }
-.for__text_spc {
+.for__text-spn {
+  font-size: 24px;
+}
+.for__text-spc {
   white-space: nowrap;
+  font-size: 24px;
+}
+.for__text-spc1 {
+  font-size: 24px;
 }
 .for__btn {
-  margin-top: 36px;
-  margin-bottom: 207px;
+  margin-top: 32px;
   width: 247px;
   height: 66px;
   color: #ffffff;
@@ -413,25 +448,26 @@ button:hover {
   text-align: center;
 }
 
-@media (min-width: 1023px) and (max-width: 1088px) {
-  .center {
-    padding-left: 80px;
-    padding-right: 80px;
+@media (max-width: 1090px) {
+  .top-games {
+    display: none;
   }
 }
-@media (max-width: 1022px) {
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
+@media (max-width: 1240px) {
+  .for__subtitle {
+    font-size: 28px;
   }
-  .header__box {
-    padding-left: 16px;
-    padding-right: 16px;
+  .for__text-spn {
+    font-size: 16px;
   }
-  .header__content {
-    padding-top: 147px;
-    min-width: 0;
+  .for__text-spc {
+    font-size: 16px;
   }
+  .for__text-spc1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1023px) {
   .header__titl {
     font-size: 40px;
     line-height: 49px;
@@ -439,14 +475,8 @@ button:hover {
   }
   .header__text {
     text-align: center;
-    font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .header__text-smbld {
-    padding-top: 24px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    width: auto;
   }
   .header__btn {
     margin-top: 34px;
@@ -457,12 +487,16 @@ button:hover {
     font-size: 16px;
     font-weight: 600;
   }
-  .header__imgBig {
-    display: none;
-  }
   .header__anim-strip {
-    margin-top: 131px;
+    margin-top: 132px;
     height: 51px;
+  }
+  .header__anim-strip-item {
+    font-size: 22px;
+  }
+  .header__anim-strip-icon {
+    width: 22px;
+    height: 22px;
   }
   .header__star-big {
     display: none;
@@ -475,8 +509,8 @@ button:hover {
     left: 82%;
     top: 445px;
   }
-  .top-games {
-    display: none;
+  .for {
+    width: 100%;
   }
   .for__box::before {
     left: 89%;
@@ -491,8 +525,6 @@ button:hover {
   }
   .for__subtitle {
     margin-top: 16px;
-    font-size: 36px;
-    line-height: 30px;
   }
   .for__text {
     margin-top: 16px;
@@ -512,7 +544,45 @@ button:hover {
     width: 69px;
   }
 }
+@media (max-width: 974px) {
+  button {
+    font-size: 18px;
+  }
+  .for__subtitle {
+    font-size: 28px;
+  }
+  .for__text {
+    overflow-wrap: break-word;
+  }
+  .for__text-spn {
+    font-size: 16px;
+  }
+  .for__text-spc {
+    font-size: 16px;
+  }
+  .for__text-spc1 {
+    font-size: 16px;
+  }
+  .for__btn {
+    margin-top: 28px;
+    width: 200px;
+    height: 35px;
+  }
+}
+@media (min-width: 1441px) {
+  .header__box {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+}
 @media (max-width: 767px) {
+  .header__box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header__content {
+    padding-top: 146px;
+  }
   .header__box::before {
     content: "";
     background-image: url(./image/star-phone-grin2.svg);
@@ -537,14 +607,28 @@ button:hover {
     padding-top: 24px;
     width: 100%;
     line-height: 20px;
+    font-size: 16px;
   }
   .header__spc {
     white-space: nowrap;
+  }
+  .header__text-smbld {
+    font-size: 16px;
+    line-height: 0;
   }
   .header__btn {
     margin-top: 36px;
     margin-left: calc(50% - 140px);
     margin-right: calc(50% - 140px);
+  }
+  .header__anim-strip-item {
+    font-size: 16px;
+  }
+  .header__anim-strip-icon {
+    width: 19px;
+    height: 19px;
+    margin: 0 27px;
+    flex-shrink: 0;
   }
   .header__star-big {
     display: block;
@@ -580,9 +664,14 @@ button:hover {
     height: 18px;
     background-repeat: no-repeat;
   }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .for {
     padding-top: 48px;
     padding-bottom: 12px;
+    max-width: 400px;
   }
   .for__box {
     display: flex;
@@ -630,8 +719,21 @@ button:hover {
     line-height: 20px;
     margin-top: 0;
   }
-  .for__text_spc-phone {
+  .for__text-spn {
+    font-size: 16px;
+  }
+  .for__text-spc {
+    font-size: 16px;
+  }
+  .for__text-spc1 {
+    font-size: 16px;
+  }
+  .for__text-phone {
     white-space: nowrap;
+  }
+  .for__text-phone-br::before {
+    content: "\a" attr(title);
+    white-space: pre;
   }
   .for__btn {
     margin-top: 32px;
@@ -639,7 +741,7 @@ button:hover {
     height: 55px;
     font-size: 16px;
   }
-  .for__img_item2 {
+  .for_item2 {
     order: 1;
   }
   .for::before {

@@ -1,48 +1,45 @@
-@media (min-width: 1023px) and (max-width: 1088px) {
-    .center {
-        padding-left: 80px;
-        padding-right: 80px;
+@media (max-width: 1090px) {
+    .top-games {
+        display: none;
     }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 1240px) {
+    .for {
 
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        &__subtitle {
+            font-size: 28px;
+        }
+
+        &__text-spn {
+            font-size: 16px;
+
+        }
+
+        &__text-spc {
+            font-size: 16px;
+        }
+
+        &__text-spc1 {
+            font-size: 16px;
+        }
     }
+}
+
+@media (max-width: 1023px) {
 
     .header {
-
-        &__box {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-
-        &__content {
-            padding-top: 147px;
-            min-width: 0;
-        }
 
         &__titl {
             font-size: 40px;
             line-height: 49px;
             text-align: center;
-            // padding-left: calc(50% - 624px);
-            // padding-right: calc(50% - 624px);
         }
 
         &__text {
             text-align: center;
-            font-size: 16px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        &__text-smbld {
-            padding-top: 24px;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 22px;
+            width: auto;
         }
 
         &__btn {
@@ -55,19 +52,23 @@
             font-weight: 600;
         }
 
-        &__imgBig {
-            display: none;
+        &__anim-strip {
+            margin-top: 132px;
+            height: 51px;
         }
 
-        &__anim-strip {
-            margin-top: 131px;
-            height: 51px;
+        &__anim-strip-item {
+            font-size: 22px;
+        }
+
+        &__anim-strip-icon {
+            width: 22px;
+            height: 22px;
         }
 
         &__star-big {
             display: none;
         }
-
     }
 
     .header::before {
@@ -80,11 +81,9 @@
         top: 445px;
     }
 
-    .top-games {
-        display: none;
-    }
-
     .for {
+        width: 100%;
+
         &__box::before {
             left: 89%;
             top: 52px;
@@ -101,8 +100,8 @@
 
         &__subtitle {
             margin-top: 16px;
-            font-size: 36px;
-            line-height: 30px;
+            // font-size: 36px;
+            // line-height: 30px;
         }
 
         &__text {
@@ -129,3 +128,46 @@
     }
 }
 
+@media (max-width: 974px) {
+
+    button {
+        font-size: 18px;
+    }
+
+    .for {
+
+        &__subtitle {
+            font-size: 28px;
+        }
+
+        &__text {
+            overflow-wrap: break-word;
+        }
+
+        &__text-spn {
+            font-size: 16px;
+
+        }
+
+        &__text-spc {
+            font-size: 16px;
+        }
+
+        &__text-spc1 {
+            font-size: 16px;
+        }
+
+        &__btn {
+            margin-top: 28px;
+            width: 200px;
+            height: 35px;
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    .header__box {
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+    }
+}
