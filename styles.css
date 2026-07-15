@@ -158,6 +158,12 @@ button:hover {
 }
 .header__titl-phone {
   display: none;
+<<<<<<< HEAD
+=======
+}
+.header__titl-phone {
+  display: none;
+>>>>>>> 44c564660691f569924837b8ce519c81cdaca61c
 }
 
 .header::before {
